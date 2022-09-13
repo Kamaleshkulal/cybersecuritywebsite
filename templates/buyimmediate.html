@@ -1,0 +1,337 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cyber Security </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assetsvendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Presento - v3.8.1
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h2 class="logo me-auto"><a href="index.html">CyberSecurity</a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="static/assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="/internship"><span>Internship</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/project">Projects </a></li>
+              <li><a href="/award">Awards</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <form  action="/buyimmediate" method="post"  >
+         
+          {% csrf_token %}
+
+            <section>
+                <div class="container d-flex justify-content-center mt-5 mb-5">
+            
+                        
+            
+                    <div class="row g-3">
+            
+                      <div class="col-md-6">  
+                        
+                        <span>Payment Method</span>
+                        <div class="card">
+            
+                          <div class="accordion" id="accordionExample">
+                            
+                            <div class="card">
+                              <div class="card-header p-0" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="d-flex align-items-center justify-content-between">
+            
+                                      <span>Paypal</span>
+                                      <img src="https://i.imgur.com/7kQEsHU.png" width="30">
+                                      
+                                    </div>
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <input type="text" class="form-control" placeholder="Paypal email">
+                                </div>
+                              </div>
+                            </div>
+            
+                            <div class="card">
+                              <div class="card-header p-0">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="d-flex align-items-center justify-content-between">
+            
+                                      <span>Credit card</span>
+                                      <div class="icons">
+                                        <img src="https://i.imgur.com/2ISgYja.png" width="30">
+                                        <img src="https://i.imgur.com/W1vtnOV.png" width="30">
+                                        <img src="https://i.imgur.com/35tC99g.png" width="30">
+                                        <img src="https://i.imgur.com/2ISgYja.png" width="30">
+                                      </div>
+                                      
+                                    </div>
+                                  </button>
+                                </h2>
+                              </div>
+            
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body payment-card-body">
+                                  
+                                  <span class="font-weight-normal card-text">Card Number</span>
+                                  <div class="input">
+            
+                                    <i class="fa fa-credit-card"></i>
+                                    <input type="text" name="card" class="form-control" placeholder="0000 0000 0000 0000" required>
+                                    
+                                  </div> 
+            
+                                  <div class="row mt-3 mb-3">
+            
+                                    <div class="col-md-6">
+            
+                                      <span class="font-weight-normal card-text">Expiry Date</span>
+                                      <div class="input">
+            
+                                        <i class="fa fa-calendar"></i>
+                                        <input type="date" name="date" class="form-control" placeholder="DD/MM/YY" required>
+                                        
+                                      </div> 
+                                      
+                                    </div>
+            
+            
+                                    <div class="col-md-6">
+            
+                                      <span class="font-weight-normal card-text">CVC</span>
+                                      <div class="input">
+            
+                                        <i class="fa fa-lock"></i>
+                                        <input type="text" name="cvv" class="form-control" placeholder="000" required>
+                                        
+                                      </div> 
+                                      
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+            
+                                      <span class="font-weight-normal card-text">Name</span>
+                                      <div class="input">
+            
+                                        <i class="fa fa-lock"></i>
+                                        <input type="text" name="name"class="form-control" placeholder="" required>
+                                        
+                                      </div> 
+                                      
+                                    </div>
+                                       
+                                    <div class="col-md-6">
+            
+                                      <span class="font-weight-normal card-text">Number</span>
+                                      <div class="input">
+            
+                                        <i class="fa fa-lock"></i>
+                                        <input type="Number" name="phone"class="form-control" placeholder="" required>
+                                        
+                                      </div> 
+                                      
+                                    </div>
+
+                                  </div>
+                                </div>
+                                </div>
+                                 
+                                  <div class="p-3">
+            
+                                    <button class="btn btn-primary btn-block free-button"><span>399</span> Month</button> 
+                                          
+                                    </div>
+                                </div>
+                              </div>
+                            
+                            
+                         
+                          
+                        </div>
+            
+                      </div>
+            
+                      <div class="col-md-6">
+                          <span>user details</span>
+            
+                          <div class="card">
+            
+                            <div class="d-flex justify-content-between p-4">
+            
+                              <div class="d-flex flex-column">
+            
+                                <span>Pro(Billed Monthly) <i class="fa fa-caret-down"></i></span>
+                                <a href="#" class="billing">Save 25% with annual billing</a>
+                                
+                              </div>
+            
+                              <div class="mt-1">
+                                <div class="na">
+                                <sup class="super-price">Rs399</sup>
+                                <span class="super-month">/Month</span>
+                                </div>
+                              </div>
+                              
+                            </div>
+            
+                            <hr class="mt-0 line">
+                            
+            
+                            <div class="p-3">
+            
+                              <div class="d-flex justify-content-between mb-2">
+
+                                <span class="font-weight-normal card-name"></span>
+                                 
+                                  </div> 
+                                  <hr class="mt-0 line">
+                                  <div class="p-3">
+                                           <div class="d-flex justify-content-between mb-2">
+                                
+                                           <span>Refferal Bonouses</span>
+                                           <span>Rs -40</span>
+                                
+                                           </div>
+            
+                                           <div class="d-flex justify-content-between">
+            
+                                                <span>Tax <i class="fa fa-clock-o"></i></span>
+                                              <span>10%</span>
+                                
+                              </div>
+                              
+            
+                            </div>
+            
+                            <hr class="mt-0 line">
+            
+            
+                            <div class="p-3 d-flex justify-content-between">
+            
+                              <div class="d-flex flex-column">
+            
+                                <span>Go And Try To Login</span>
+                                <small>After 30 days Rs 145</small>
+                                
+                              </div>
+            
+                              
+            
+                            </div>
+            
+                            <div class="p-3">
+            
+                            <button><a class="btn btn-primary btn-block free-button" href="/contact">Try it for 30 days Free</a></button>
+                              
+                            </div>
+                            <div>
+                              
+                            {% for message in messages %}
+                            <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                            <strong></strong> {{message}}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                             {% endfor %}
+                           </div>
+            
+                        </div>
+                            
+                          </div>
+                      </div>
+                      
+                    </div>    
+                  </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</form>
+
+ 
+                
+
+
+   
+               
+      
+
+  <main id="main">
+    
+  </main>
+     
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
